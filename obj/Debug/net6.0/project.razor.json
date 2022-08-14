@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Index.cshtml",
+      "TargetPath": "Views\\Visits\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Delete.cshtml",
       "TargetPath": "Views\\Customers\\Delete.cshtml",
       "FileKind": "mvc"
@@ -16323,13 +16328,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animal/Delete.cshtml",
-      "TargetPath": "Views\\Animal\\Delete.cshtml",
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Edit.cshtml",
+      "TargetPath": "Views\\Animals\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animal/Details.cshtml",
-      "TargetPath": "Views\\Animal\\Details.cshtml",
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Delete.cshtml",
+      "TargetPath": "Views\\Animals\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Create.cshtml",
+      "TargetPath": "Views\\Animals\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16343,6 +16353,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Edit.cshtml",
+      "TargetPath": "Views\\Visits\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -16353,13 +16368,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Delete.cshtml",
+      "TargetPath": "Views\\Visits\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animal/Index.cshtml",
-      "TargetPath": "Views\\Animal\\Index.cshtml",
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Details.cshtml",
+      "TargetPath": "Views\\Visits\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16383,13 +16403,18 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animal/Create.cshtml",
-      "TargetPath": "Views\\Animal\\Create.cshtml",
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Create.cshtml",
+      "TargetPath": "Views\\Visits\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animal/Edit.cshtml",
-      "TargetPath": "Views\\Animal\\Edit.cshtml",
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Index.cshtml",
+      "TargetPath": "Views\\Animals\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Details.cshtml",
+      "TargetPath": "Views\\Animals\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

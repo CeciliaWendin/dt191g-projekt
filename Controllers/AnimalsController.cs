@@ -10,23 +10,23 @@ using VetAB.Models;
 
 namespace VetAB.Controllers
 {
-    public class AnimalController : Controller
+    public class AnimalsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public AnimalController(ApplicationDbContext context)
+        public AnimalsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Animal
+        // GET: Animals
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Animals.Include(a => a.Customer);
             return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: Animal/Details/5
+        // GET: Animals/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Animals == null)
@@ -45,14 +45,14 @@ namespace VetAB.Controllers
             return View(animal);
         }
 
-        // GET: Animal/Create
+        // GET: Animals/Create
         public IActionResult Create()
         {
             ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "Email");
             return View();
         }
 
-        // POST: Animal/Create
+        // POST: Animals/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -69,7 +69,7 @@ namespace VetAB.Controllers
             return View(animal);
         }
 
-        // GET: Animal/Edit/5
+        // GET: Animals/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Animals == null)
@@ -86,7 +86,7 @@ namespace VetAB.Controllers
             return View(animal);
         }
 
-        // POST: Animal/Edit/5
+        // POST: Animals/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -122,7 +122,7 @@ namespace VetAB.Controllers
             return View(animal);
         }
 
-        // GET: Animal/Delete/5
+        // GET: Animals/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Animals == null)
@@ -141,7 +141,7 @@ namespace VetAB.Controllers
             return View(animal);
         }
 
-        // POST: Animal/Delete/5
+        // POST: Animals/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

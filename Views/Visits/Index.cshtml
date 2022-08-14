@@ -1,4 +1,4 @@
-@model IEnumerable<VetAB.Models.Animal>
+@model IEnumerable<VetAB.Models.Visit>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,19 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Customer)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BirthDate)
+                @Html.DisplayNameFor(model => model.Animal)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Type)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Breed)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Customer)
+                @Html.DisplayNameFor(model => model.VisitDate)
             </th>
             <th></th>
         </tr>
@@ -34,19 +31,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.Customer.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.BirthDate)
+                @Html.DisplayFor(modelItem => item.Animal.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Type)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Breed)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer.Address)
+                @Html.DisplayFor(modelItem => item.VisitDate)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

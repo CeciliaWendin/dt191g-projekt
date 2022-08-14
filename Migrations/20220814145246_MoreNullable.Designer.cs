@@ -8,11 +8,11 @@ using VetAB.Data;
 
 #nullable disable
 
-namespace VetAB.Data.Migrations
+namespace VetAB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220813133237_AddedShadowProps")]
-    partial class AddedShadowProps
+    [Migration("20220814145246_MoreNullable")]
+    partial class MoreNullable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -222,21 +222,26 @@ namespace VetAB.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime?>("BirthDate")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Breed")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("CustomerId")
+                        .IsRequired()
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Type")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -278,6 +283,41 @@ namespace VetAB.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Visit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("AnimalId")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("VisitDate")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("VisitType")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Visits");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -335,7 +375,28 @@ namespace VetAB.Data.Migrations
                 {
                     b.HasOne("VetAB.Models.Customer", "Customer")
                         .WithMany()
-                        .HasForeignKey("CustomerId");
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Visit", b =>
+                {
+                    b.HasOne("VetAB.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VetAB.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
 
                     b.Navigation("Customer");
                 });

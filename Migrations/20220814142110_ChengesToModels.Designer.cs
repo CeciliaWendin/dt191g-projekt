@@ -8,11 +8,11 @@ using VetAB.Data;
 
 #nullable disable
 
-namespace VetAB.Data.Migrations
+namespace VetAB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220813133728_DisplayNames")]
-    partial class DisplayNames
+    [Migration("20220814142110_ChengesToModels")]
+    partial class ChengesToModels
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -285,6 +285,55 @@ namespace VetAB.Data.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("VetAB.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Price")
+                        .IsRequired()
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Visit", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AnimalId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("VisitDate")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("Visits");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -339,12 +388,44 @@ namespace VetAB.Data.Migrations
             modelBuilder.Entity("VetAB.Models.Animal", b =>
                 {
                     b.HasOne("VetAB.Models.Customer", "Customer")
-                        .WithMany()
+                        .WithMany("Animals")
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Visit", b =>
+                {
+                    b.HasOne("VetAB.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VetAB.Models.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VetAB.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Customer", b =>
+                {
+                    b.Navigation("Animals");
                 });
 #pragma warning restore 612, 618
         }

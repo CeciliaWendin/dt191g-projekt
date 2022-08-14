@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace VetAB.Data.Migrations
+namespace VetAB.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class AddedNull : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
