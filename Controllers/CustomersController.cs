@@ -23,7 +23,9 @@ namespace VetAB.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Customers != null ? 
-                          View(await _context.Customers.ToListAsync()) :
+                          View(await _context.Customers
+                        .Include(c => c.Animals)
+                          .ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.Customers'  is null.");
         }
 
@@ -36,6 +38,7 @@ namespace VetAB.Controllers
             }
 
             var customer = await _context.Customers
+                .Include(c => c.Animals)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {
@@ -56,7 +59,7 @@ namespace VetAB.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Address,Email,Phone")] Customer customer)
+        public async Task<IActionResult> Create([Bind("FirstName,LastName,Address,Email,Phone")] Customer customer)
         {
             if (ModelState.IsValid)
             {

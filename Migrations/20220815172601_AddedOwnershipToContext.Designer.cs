@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VetAB.Data;
 
@@ -10,9 +11,10 @@ using VetAB.Data;
 namespace VetAB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220815172601_AddedOwnershipToContext")]
+    partial class AddedOwnershipToContext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.8");
@@ -282,6 +284,24 @@ namespace VetAB.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("VetAB.Models.Ownership", b =>
+                {
+                    b.Property<int?>("CustomerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("AnimalId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("CustomerId", "AnimalId");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Ownership");
+                });
+
             modelBuilder.Entity("VetAB.Models.Visit", b =>
                 {
                     b.Property<int>("Id")
@@ -370,10 +390,29 @@ namespace VetAB.Migrations
             modelBuilder.Entity("VetAB.Models.Animal", b =>
                 {
                     b.HasOne("VetAB.Models.Customer", "Customer")
-                        .WithMany("Animals")
+                        .WithMany()
                         .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("VetAB.Models.Ownership", b =>
+                {
+                    b.HasOne("VetAB.Models.Animal", "Animal")
+                        .WithMany("Ownership")
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("VetAB.Models.Customer", "Customer")
+                        .WithMany("Ownership")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
 
                     b.Navigation("Customer");
                 });
@@ -397,9 +436,14 @@ namespace VetAB.Migrations
                     b.Navigation("Customer");
                 });
 
+            modelBuilder.Entity("VetAB.Models.Animal", b =>
+                {
+                    b.Navigation("Ownership");
+                });
+
             modelBuilder.Entity("VetAB.Models.Customer", b =>
                 {
-                    b.Navigation("Animals");
+                    b.Navigation("Ownership");
                 });
 #pragma warning restore 612, 618
         }

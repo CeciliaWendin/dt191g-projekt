@@ -16,6 +16,11 @@ public class ApplicationDbContext : IdentityDbContext
     modelBuilder.Entity<Animal>().Property<DateTime>("CreatedDate");
     modelBuilder.Entity<Customer>().Property<DateTime>("CreatedDate");
     modelBuilder.Entity<Visit>().Property<DateTime>("CreatedDate");
+  
+     modelBuilder.Entity<Animal>()
+        .HasOne(ca => ca.Customer)
+        .WithMany(ca => ca.Animals);
+
 }
     public DbSet<Animal>? Animals { get; set; }
     public DbSet<Customer>? Customers { get; set; }

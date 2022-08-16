@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VetAB.Models;
 
@@ -19,5 +20,6 @@ public class Customer
     public string? Email { get; set; }  
    [Display(Name="Telefon")]
    [Required]
-    public string? Phone { get; set; }  
+    public string? Phone { get; set; } 
+    public ICollection<Animal>? Animals { get; set; }
 }
