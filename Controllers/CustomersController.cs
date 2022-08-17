@@ -23,10 +23,11 @@ namespace VetAB.Controllers
         public async Task<IActionResult> Index()
         {
               return _context.Customers != null ? 
-                          View(await _context.Customers
+                        View(await _context.Customers
                         .Include(c => c.Animals)
-                          .ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Customers'  is null.");
+                        .Include(c => c.Visits)
+                        .ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Customers'  is null.");
         }
 
         // GET: Customers/Details/5
@@ -39,6 +40,7 @@ namespace VetAB.Controllers
 
             var customer = await _context.Customers
                 .Include(c => c.Animals)
+                .Include(c => c.Visits)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (customer == null)
             {

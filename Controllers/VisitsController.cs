@@ -35,8 +35,8 @@ namespace VetAB.Controllers
             }
 
             var visit = await _context.Visits
-                .Include(v => v.Animal)
                 .Include(v => v.Customer)
+                .ThenInclude(v => v.Animals)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (visit == null)
             {
@@ -64,11 +64,13 @@ namespace VetAB.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(visit);
-                await _context.SaveChangesAsync();
+                await _context
+                .SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AnimalId"] = new SelectList(_context.Animals, "Id", "Name", visit.AnimalId);
+            //ViewData["AnimalId"] = new SelectList(_context.Animals, "Id", "Name", visit.AnimalId);
             ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "Email", visit.CustomerId);
+            ViewData["AnimalId"] = new SelectList(_context.Customers, "Id", "Name", visit.AnimalId);
             return View(visit);
         }
 

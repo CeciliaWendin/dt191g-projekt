@@ -21,6 +21,10 @@ public class ApplicationDbContext : IdentityDbContext
         .HasOne(ca => ca.Customer)
         .WithMany(ca => ca.Animals);
 
+    modelBuilder.Entity<Visit>()
+        .HasOne(ca => ca.Customer)
+        .WithMany(ca => ca.Visits);
+
 }
     public DbSet<Animal>? Animals { get; set; }
     public DbSet<Customer>? Customers { get; set; }

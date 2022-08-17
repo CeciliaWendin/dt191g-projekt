@@ -21,5 +21,8 @@ public class Customer
    [Display(Name="Telefon")]
    [Required]
     public string? Phone { get; set; } 
+    [Display(Name="Ägare till")]
     public ICollection<Animal>? Animals { get; set; }
+    [Display(Name="Bokade besök")]
+    public ICollection<Visit>? Visits { get; set; }
 }

@@ -16,8 +16,8 @@ public class Animal
     public string? Type { get; set; }
    [Display(Name="Ras")]
     public string? Breed { get; set; } 
-   [Display(Name="Ägare")]
-   [Required]
     public int? CustomerId { get; set; } 
+     [Display(Name="Ägare")]
+   [Required]
    public Customer? Customer{ get; set; }  
 }
