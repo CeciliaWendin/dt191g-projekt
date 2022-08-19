@@ -28,7 +28,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
                         </li>
-                       
+                       @if(User.IsInRole("Administrator") || User.IsInRole("Employee"))
+                       {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Index">Kunder</a>
                         </li>
@@ -40,7 +41,7 @@
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Visits" asp-action="Index">Besök</a>
                         </li>
-                       
+                       }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
