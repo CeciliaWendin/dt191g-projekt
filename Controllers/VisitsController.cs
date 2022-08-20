@@ -70,7 +70,6 @@ namespace VetAB.Controllers
                 .SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            //ViewData["AnimalId"] = new SelectList(_context.Animals, "Id", "Name", visit.AnimalId);
             ViewData["CustomerId"] = new SelectList(_context.Customers, "Id", "Email", visit.CustomerId);
             ViewData["AnimalId"] = new SelectList(_context.Customers, "Id", "Name", visit.AnimalId);
             return View(visit);
