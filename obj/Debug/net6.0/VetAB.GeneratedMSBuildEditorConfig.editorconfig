@@ -8,125 +8,149 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VetAB
 build_property.RootNamespace = VetAB
-build_property.ProjectDir = /Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/
+build_property.ProjectDir = /Users/cecilia/dt191g-projekt-1/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB
+build_property.MSBuildProjectDirectory = /Users/cecilia/dt191g-projekt-1
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/Account/Login.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/Account/Register.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvQWNjb3VudC9fVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/_ViewImports.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Create.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Animals/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Delete.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Animals/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Details.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Animals/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Edit.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Animals/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Animals/Index.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Animals/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW5pbWFscy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Create.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Delete.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Details.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Edit.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Customers/Index.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Home/Index.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Home/Privacy.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Shared/Error.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Products/StartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdHMvU3RhcnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cecilia/dt191g-projekt-1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Shared/_LoginPartial.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Create.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Visits/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Delete.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Visits/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Details.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Visits/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Edit.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Visits/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Visits/Index.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Visits/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlzaXRzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/_ViewImports.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/_ViewStart.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/Views/Shared/_Layout.cshtml]
+[/Users/cecilia/dt191g-projekt-1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tfejung1z5

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj": {}
+    "/Users/cecilia/dt191g-projekt-1/VetAB.csproj": {}
   },
   "projects": {
-    "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj": {
+    "/Users/cecilia/dt191g-projekt-1/VetAB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj",
+        "projectUniqueName": "/Users/cecilia/dt191g-projekt-1/VetAB.csproj",
         "projectName": "VetAB",
-        "projectPath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj",
+        "projectPath": "/Users/cecilia/dt191g-projekt-1/VetAB.csproj",
         "packagesPath": "/Users/cecilia/.nuget/packages/",
-        "outputPath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/obj/",
+        "outputPath": "/Users/cecilia/dt191g-projekt-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cecilia/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "LazZiya.ImageResize": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"

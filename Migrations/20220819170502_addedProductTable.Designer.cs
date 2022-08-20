@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VetAB.Data;
 
@@ -10,9 +11,10 @@ using VetAB.Data;
 namespace VetAB.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220819170502_addedProductTable")]
+    partial class addedProductTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.8");
@@ -46,21 +48,21 @@ namespace VetAB.Migrations
                         new
                         {
                             Id = "6ca78333-ad17-4662-9298-56a92e21556b",
-                            ConcurrencyStamp = "cdaff7d3-fff8-4146-94c4-e172e9db292a",
+                            ConcurrencyStamp = "58a80d28-0941-431a-84d6-0c33fb153e50",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "6ca78449-af17-4662-7624-56a92e21556b",
-                            ConcurrencyStamp = "8fe2f3e3-73f9-49d0-8709-70b5ec3d0fa8",
+                            ConcurrencyStamp = "3b102406-db12-475f-a65a-56768a42514e",
                             Name = "Employee",
                             NormalizedName = "EMPLOYEE"
                         },
                         new
                         {
                             Id = "6ae78354-ff17-1675-8960-56a92e21559e",
-                            ConcurrencyStamp = "bc34d89e-a0f2-49f9-be9e-100ae6a7cbc0",
+                            ConcurrencyStamp = "ec6e0c85-7c62-4fb0-8371-91a7e5b03e47",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER"
                         });
@@ -303,7 +305,7 @@ namespace VetAB.Migrations
                         {
                             Id = "03d935ca-bba2-4167-8e9f-46414b62aa2f",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9a6ab5f7-1b89-493f-a13d-830a4f94d60e",
+                            ConcurrencyStamp = "9f334a67-3b8a-4c70-8338-c19aa9806457",
                             Email = "admin@testmail.com",
                             EmailConfirmed = true,
                             FirstName = "Cecilia",
@@ -311,9 +313,9 @@ namespace VetAB.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@TESTMAIL.COM",
                             NormalizedUserName = "ADMIN@TESTMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGPuHFbhY/1dzRTYdwgq7Nnb2xVZNShkilKEU/eAYlFDYECi1oIcQgq7xQ2BCIgi+A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEORmBgGnrGrNDvioERoaSqP+4f5xE+iGFAZIw0jGaRwjw3aJgBcRuBlZSRd7VDSHoA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "2be21a07-88c4-4a7a-a1e4-7ca115dc9871",
+                            SecurityStamp = "aae8d66e-d543-4474-95fb-6d4c65f247a8",
                             TwoFactorEnabled = false,
                             UserName = "admin@testmail.com"
                         },
@@ -321,7 +323,7 @@ namespace VetAB.Migrations
                         {
                             Id = "548169a6-9a38-4d11-97ee-6316008da917",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "03842ed4-0186-4928-8c80-7ad114a63bf1",
+                            ConcurrencyStamp = "08d0eceb-d092-4130-965d-7ee0ce8536ad",
                             Email = "employee@testmail.com",
                             EmailConfirmed = true,
                             FirstName = "Dennis",
@@ -329,9 +331,9 @@ namespace VetAB.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "EMPLOYEE@TESTMAIL.COM",
                             NormalizedUserName = "EMPLOYEE@TESTMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAELCJ+PDVOHO5/5paTsvWEZQ0yTtWjykYfMJ5OYO8C1ImhggeIYeZkhyIF9kTCXmVLw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECCUNCmLF0mBPQaNXq7KuWcj8a7VolLnUxFjDRG5HmmC9DOqK5/8qkZ6C2/4GXkIEw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "63dd58b6-0922-458b-86e4-1b45799f077a",
+                            SecurityStamp = "8b097349-df1d-42f4-922a-b55eb708dabe",
                             TwoFactorEnabled = false,
                             UserName = "employee@testmail.com"
                         },
@@ -339,7 +341,7 @@ namespace VetAB.Migrations
                         {
                             Id = "4f5fcfe9-c3ed-46c4-ba01-4414fd6f356e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3b36187b-e07c-4bf9-aa06-1f7133f84dd1",
+                            ConcurrencyStamp = "1edacfac-b071-4adf-a713-a30e8b5a0df6",
                             Email = "customer@testmail.com",
                             EmailConfirmed = true,
                             FirstName = "Arvid",
@@ -347,9 +349,9 @@ namespace VetAB.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CUSTOMER@TESTMAIL.COM",
                             NormalizedUserName = "CUSTOMER@TESTMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHD1RJHIR+e3pA9lWqoBA17EN0rKKUR3JetZEOw9oHEUxPHC0aI+9gLZtFmpfAKAww==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDI1hg1HcuBq8Q9fsxW6hQDKfQpTI1n53o0Tuv+AoMZmK8nkyiqXPvsJOhkraaN24w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "196cdd41-2856-41d3-b8a0-ed93ff6e22c4",
+                            SecurityStamp = "8140d7c6-b09b-4216-8ae4-c50222623301",
                             TwoFactorEnabled = false,
                             UserName = "customer@testmail.com"
                         });
@@ -387,31 +389,6 @@ namespace VetAB.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("VetAB.Models.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Price")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("VetAB.Models.Visit", b =>

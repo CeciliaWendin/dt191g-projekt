@@ -15,6 +15,22 @@
           }
         }
       },
+      "LazZiya.ImageResize/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/LazZiya.ImageResize.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/LazZiya.ImageResize.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MessagePack/2.1.152": {
         "type": "package",
         "dependencies": {
@@ -3866,6 +3882,22 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "LazZiya.ImageResize/4.1.0": {
+      "sha512": "bTAJ7Coa2I2PAKw7rcIyjVZlpJnoJacTpkAYAFDSQTrWC4r6m19zoVfMYbn/CXsJc9mfVqznuf0Ql0uwvproKg==",
+      "type": "package",
+      "path": "lazziya.imageresize/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.ico",
+        "icon.png",
+        "lazziya.imageresize.4.1.0.nupkg.sha512",
+        "lazziya.imageresize.nuspec",
+        "lib/netstandard2.0/LazZiya.ImageResize.dll",
+        "lib/netstandard2.0/LazZiya.ImageResize.xml",
+        "license.txt"
       ]
     },
     "MessagePack/2.1.152": {
@@ -10723,6 +10755,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "LazZiya.ImageResize >= 4.1.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.6",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.6",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.6",
@@ -10739,11 +10772,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj",
+      "projectUniqueName": "/Users/cecilia/dt191g-projekt-1/VetAB.csproj",
       "projectName": "VetAB",
-      "projectPath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj",
+      "projectPath": "/Users/cecilia/dt191g-projekt-1/VetAB.csproj",
       "packagesPath": "/Users/cecilia/.nuget/packages/",
-      "outputPath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/obj/",
+      "outputPath": "/Users/cecilia/dt191g-projekt-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cecilia/.nuget/NuGet/NuGet.Config"
@@ -10770,6 +10803,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "LazZiya.ImageResize": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.6, )"

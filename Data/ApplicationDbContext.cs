@@ -36,4 +36,5 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Animal>? Animals { get; set; }
     public DbSet<Customer>? Customers { get; set; }
     public DbSet<Visit>? Visits { get; set; }
+    public DbSet<Product>? Products { get; set; }
 }

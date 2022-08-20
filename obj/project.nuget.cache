@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SPyjahUX5Rf2xoAx3/vPN6e/KoRGCWOZMHQBZCgVq3Ha3WI2EfpAYjZe8FHwwhfEIylo3r0kKbwBlWBOX3Om3A==",
+  "dgSpecHash": "CFpZvakrrSpx/CvUcZAwPUil2Mgcp0p4OtyhQZNBV/Wdp5MWKkbhA9JENf42BS3BjKmEArNtYbRzoaxCgt/Y4Q==",
   "success": true,
-  "projectFilePath": "/Users/cecilia/Desktop/dt191g_vt22_cewe1800/Projekt/VetAB/VetAB.csproj",
+  "projectFilePath": "/Users/cecilia/dt191g-projekt-1/VetAB.csproj",
   "expectedPackageFiles": [
     "/Users/cecilia/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/cecilia/.nuget/packages/lazziya.imageresize/4.1.0/lazziya.imageresize.4.1.0.nupkg.sha512",
     "/Users/cecilia/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/cecilia/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/cecilia/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
